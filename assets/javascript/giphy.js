@@ -8,7 +8,7 @@ function renderButtons(){
   for (var i =0; i < monsters.length; i++){
     var a = $("<button>");
     a.addClass("monster");
-    a.attr(data-name, monsters[i]);
+    a.attr("data-name", monsters[i]);
     a.text(monsters[i]);
     $("#buttons-view").append(a);
   }
@@ -20,3 +20,4 @@ $("#add-monster").on("click", function(event){
   renderButtons();
 });
 renderButtons();
+console.log("mars")
