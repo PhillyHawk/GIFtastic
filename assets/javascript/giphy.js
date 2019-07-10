@@ -23,7 +23,7 @@ renderButtons();
 $("button").on("click", function () {
   var monster = $(this).attr("data-monster");
   var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-    monster + "&api_key=BkaUZZWcFij6J7AoQj3WtPb1R2p9O6V9&limit=10";
+    monster + "&api_key=UK3iOXI0JIkyMjSg5vYkp1TrsA9astgo&limit=10";
 
   $.ajax({
     url: queryURL,
