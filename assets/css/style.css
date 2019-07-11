@@ -50,3 +50,15 @@ label{
   color: rgb(124, 3, 3);
   background: cornsilk;
 }
+
+.monsterDiv {
+  width: 400px;
+  margin-left: 375px;
+}
+#gifs-appear-here{
+
+  background-image: url(https://www.alternative-theatre.jp/images/kv_about_pc.png);
+}
+p{
+  color: green;
+}
