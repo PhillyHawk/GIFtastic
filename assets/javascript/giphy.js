@@ -18,6 +18,7 @@ $("#add-monster").on("click", function (event) {
   var monster = $("#monster-input").val().trim();
   monsters.push(monster);
   renderButtons();
+  return;
 });
 renderButtons();
 $("button-view").on("click", function () {
@@ -43,6 +44,6 @@ $("button-view").on("click", function () {
       gifDiv.append(monsterImage);
 
       $("#gifs-appear-here").prepend(gifDiv);
-
+      console.log(response)
     }
   });
