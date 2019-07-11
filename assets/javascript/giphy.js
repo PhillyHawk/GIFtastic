@@ -1,7 +1,7 @@
 $(document).ready(function(){
 //array of monsters
 var monsters = [
-  "Dracula", "Frankenstein", "Mummy", "Zombies", "Godzilla", "Clowns", "Elvira", "The Munsters", "Cousin Itt", "Gremlins", "Killer Tomatoes"
+  "Dracula", "Frankenstein", "Mummy", "Zombies", "Godzilla", "Bigfoot", "Elvira", "The Munsters", "Cousin Itt", "Gremlins", "Killer Tomatoes", "Chucky"
 ]
 //function for displaying monster data
 function renderButtons() {
@@ -63,7 +63,9 @@ $(document).on("click", ".monster", function() {
 			monsterImage.attr("data-still", results[i].images.original_still.url);
       
       monsterImage.attr("data-animate", results[i].images.original.url);
-			
+
+      monsterImage.attr("data-state", "animate");
+		
       gifDiv.append(p);
       gifDiv.append(monsterImage);
 
@@ -73,7 +75,7 @@ $(document).on("click", ".monster", function() {
     
   })
   });
-  $(".gif").on("click", function() {
+  $(document).on("click", "img", function() {
 		var state = $(this).attr("data-state");
 		var animateImage = $(this).attr("data-animate");
 		var stillImage = $(this).attr("data-still");

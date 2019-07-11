@@ -29,7 +29,7 @@ h1{
 }
 .monster{
   font-size: 18px;
-  margin: 10px;
+  margin: 15px;
   background: green;
   color: black;
 }
@@ -55,6 +55,7 @@ label{
   text-shadow: 2px 2px 4px black;
   background: cornsilk;
 }
+
 
 .monsterDiv {
   width: 500px;
