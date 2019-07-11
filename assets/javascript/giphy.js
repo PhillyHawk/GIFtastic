@@ -20,7 +20,7 @@ $("#add-monster").on("click", function (event) {
   renderButtons();
 });
 renderButtons();
-$("button").on("click", function () {
+$("button-view").on("click", function () {
   var monster = $(this).attr("data-monster");
   var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
     monster + "&api_key=UK3iOXI0JIkyMjSg5vYkp1TrsA9astgo&limit=10";
@@ -35,8 +35,13 @@ $("button").on("click", function () {
 
     for (var i = 0; i < results.length; i++) {
       var gifDiv = $("<div");
+      var rating = results[i].rating;
+      var p = $("<p>").text("Rating: " + rating);
       var monsterImage = $("<img>");
       monsterImage.attr("src", results[i].images.fixed_height.url);
+      gifDiv.append(p);
+      gifDiv.append(monsterImage);
+
       $("#gifs-appear-here").prepend(gifDiv);
 
     }

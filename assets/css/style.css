@@ -1,0 +1,42 @@
+body{
+  background-color: black;
+}
+
+img{
+  width:100%;
+}
+
+.title{
+  position: relative;
+  height: 100px;
+  background: black;
+  color: green;
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Creepster', cursive;
+}
+h1{
+  position: absolute;
+  margin-top: 0px;
+  margin-left: 350px;
+}
+.main-container{
+  margin-top: 25px;
+}
+.monster{
+  margin: 10px;
+  background: green;
+  color: black;
+}
+label{
+  font-family: 'Nosifer', cursive;
+  color: rgb(124, 3, 3);
+}
+#monster-form{
+  margin-left: 20px;
+}
+#add-monster{
+  font-family: 'Nosifer', cursive;
+  color: rgb(124, 3, 3);
+  margin-top: 5px;
+}
