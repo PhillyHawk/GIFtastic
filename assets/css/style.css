@@ -1,5 +1,6 @@
 body{
   background-color: black;
+  background-image: url(https://live.staticflickr.com/3942/15642634706_43d211437e_b.jpg)
 }
 
 img{
@@ -21,7 +22,7 @@ h1{
   
   position: absolute;
   margin-top: 0px;
-  margin-left: 320px;
+  margin-left: 300px;
 }
 .main-container{
   margin-top: 35px;
@@ -35,6 +36,7 @@ h1{
 label{
   font-family: 'Nosifer', cursive;
   color: rgb(124, 3, 3);
+  text-shadow: 2px 2px 4px black;
 }
 #monster-form{
  margin-left: 20px;
@@ -43,22 +45,31 @@ label{
   background: cornsilk;
   font-family: 'Nosifer', cursive;
   color: rgb(124, 3, 3);
+  text-shadow: 2px 2px 4px black;
+
   margin-top: 5px;
 }
 .monster:hover{
   font-family: 'Nosifer', cursive;
   color: rgb(124, 3, 3);
+  text-shadow: 2px 2px 4px black;
   background: cornsilk;
 }
 
 .monsterDiv {
-  width: 400px;
+  width: 500px;
   margin-left: 375px;
 }
-#gifs-appear-here{
-
+/* #gifs-appear-here{
   background-image: url(https://www.alternative-theatre.jp/images/kv_about_pc.png);
-}
+} */
 p{
-  color: green;
+  font-family:'Nosifer', cursive;
+  color: rgb(124, 3, 3);
+  text-shadow: 2px 2px 4px black;
+  background: cornsilk;
+  text-align:center;
+}
+img{
+  margin-top: 30px;
 }

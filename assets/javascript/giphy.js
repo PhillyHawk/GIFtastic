@@ -38,7 +38,7 @@ $("#add-monster").on("click", function (event) {
 renderButtons();
 
 $(document).on("click", ".monster", function() {
-// $(".monster").on("click", function () {
+
   var monster = $(this).attr("data-name");
   console.log(monster);
   var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
@@ -57,13 +57,37 @@ $(document).on("click", ".monster", function() {
       var rating = results[i].rating;
       var p = $("<p>").text("Rating: " + rating);
       var monsterImage = $("<img>");
+      
       monsterImage.attr("src", results[i].images.fixed_height.url);
+     
+			monsterImage.attr("data-still", results[i].images.original_still.url);
+      
+      monsterImage.attr("data-animate", results[i].images.original.url);
+			
       gifDiv.append(p);
       gifDiv.append(monsterImage);
 
       $("#gifs-appear-here").prepend(gifDiv);
       console.log(response)
     }
+    
   })
   });
+  $(".gif").on("click", function() {
+		var state = $(this).attr("data-state");
+		var animateImage = $(this).attr("data-animate");
+		var stillImage = $(this).attr("data-still");
+
+		if (state == "still") {
+			$(this).attr("src", animateImage);
+			$(this).attr("data-state", "animate");
+		}
+  
+		else if (state == "animate") {
+			$(this).attr("src", stillImage);
+			$(this).attr("data-state", "still");
+    }
+    console.log(state)
+  }
+  ) 
 });
