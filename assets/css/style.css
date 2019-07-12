@@ -37,6 +37,7 @@ label{
   font-family: 'Nosifer', cursive;
   color: rgb(124, 3, 3);
   text-shadow: 2px 2px 4px black;
+
 }
 #monster-form{
  margin-left: 20px;
@@ -45,14 +46,14 @@ label{
   background: cornsilk;
   font-family: 'Nosifer', cursive;
   color: rgb(124, 3, 3);
-  text-shadow: 2px 2px 4px black;
+  text-shadow: 2px 2px 4px rgb(48, 1, 1);
 
   margin-top: 5px;
 }
 .monster:hover{
   font-family: 'Nosifer', cursive;
   color: rgb(124, 3, 3);
-  text-shadow: 2px 2px 4px black;
+  text-shadow: 2px 2px 4px rgb(48, 1, 1);
   background: cornsilk;
 }
 
@@ -67,7 +68,7 @@ label{
 p{
   font-family:'Nosifer', cursive;
   color: rgb(124, 3, 3);
-  text-shadow: 2px 2px 4px black;
+  text-shadow: 2px 2px 4px rgb(48, 1, 1);
   background: cornsilk;
   text-align:center;
 }

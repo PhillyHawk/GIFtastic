@@ -50,7 +50,7 @@ $(document).on("click", ".monster", function() {
   })
   .then(function (response) {
     var results = response.data;
-
+   // $("#buttons-view").empty();
     for (var i = 0; i < results.length; i++) {
       var gifDiv = $("<div>");
       gifDiv.addClass('monsterDiv')
