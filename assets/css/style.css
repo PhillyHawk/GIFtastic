@@ -61,10 +61,8 @@ label{
 .monsterDiv {
   width: 500px;
   margin-left: 375px;
-}
-/* #gifs-appear-here{
-  background-image: url(https://www.alternative-theatre.jp/images/kv_about_pc.png);
-} */
+} 
+ 
 p{
   font-family:'Nosifer', cursive;
   color: rgb(124, 3, 3);
